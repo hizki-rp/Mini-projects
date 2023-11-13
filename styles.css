@@ -1,14 +1,19 @@
+:root{
+    --dark: rgb(10, 10, 10);
+    --light: rgb(242, 242, 242);
+}
+
 *{
     padding: 0;
     margin: 0;
 
     box-sizing: border-box;
-    background-color: rgb(239, 235, 232);
+    background-color: var(--light)
 }
 
 
 header{
-background-color: black;
+background-color: var(--dark)
 }
 body{
     margin-left: 0.7rem;
@@ -18,32 +23,29 @@ body{
 li{
    display: inline;
    padding:3rem;
-   background-color: rgb(39, 112, 39);
+   background-color: var(--light)
    
    
 }
 a{
     text-decoration: none;
     color: rgb(178, 178, 249);
-    background-color: rgb(28, 94, 28);
+    background-color: var(--light)
 }
 a:hover{
-    background-color: rgb(24, 65, 31);
+    background-color: var(--light);
     transition: 1s;
 }
 .title{
     padding: 2rem;
     color:rgb(13, 3, 31);
     text-align: center;
-    background-color: rgb(39, 112, 39);
+  
     
 }
-.title h1{
-    background-color: rgb(39, 112, 39); 
-}
+
 article p{
 
-   background-color: rgb(95, 154, 95); 
    text-align: center;
    padding: 2rem
 }
@@ -51,9 +53,6 @@ article p{
    
    position: inherit;
    padding: 1rem;
-    background-color: rgb(28, 179, 111);
+  
     
-}
-ul{
- background-color: rgb(36, 96, 36);   
 }
