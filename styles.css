@@ -3,6 +3,7 @@
     --light: rgb(242, 242, 242);
 }
 
+
 *{
     padding: 0;
     margin: 0;
@@ -12,9 +13,7 @@
 }
 
 
-header{
-background-color: var(--dark)
-}
+
 body{
     margin-left: 0.7rem;
     margin-right: 0.7rem;
@@ -23,18 +22,31 @@ body{
 li{
    display: inline;
    padding:3rem;
-   background-color: var(--light)
+   background-color: var(--light);
+
    
    
 }
 a{
     text-decoration: none;
     color: rgb(178, 178, 249);
-    background-color: var(--light)
+    background-color: var(--light);
+    color: green;
+    float: right;
+    margin: 0.5rem 1rem;
+
 }
 a:hover{
-    background-color: var(--light);
+    background-color: var(--dark);
+    color: var(--light);
+    opacity: 0.5;
     transition: 1s;
+}
+.logo{
+    font-size: large;
+    color: black;
+    float: left;
+    margin-top:0.5rem;
 }
 .title{
     padding: 2rem;
@@ -47,7 +59,8 @@ a:hover{
 article p{
 
    text-align: center;
-   padding: 2rem
+   padding: 2rem;
+   
 }
 .compRow .comp{
    
