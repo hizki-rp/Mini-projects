@@ -9,37 +9,40 @@
     margin: 0;
 
     box-sizing: border-box;
-    background-color: var(--light)
+    background-color: var(--light);
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+   
 }
 
 
-
-body{
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
-}
 
 li{
    display: inline;
    padding:3rem;
    background-color: var(--light);
 
-   
-   
+}
+
+.wrapper{
+ margin-left: 10%;
+ margin-right: 10%;
 }
 a{
     text-decoration: none;
     color: rgb(178, 178, 249);
     background-color: var(--light);
-    color: green;
+    color: rgb(6, 16, 6);
     float: right;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem;
+  
 
 }
+
 a:hover{
     background-color: var(--dark);
     color: var(--light);
-    opacity: 0.5;
+    opacity: 0.9;
     transition: 1s;
 }
 .logo{
@@ -49,23 +52,67 @@ a:hover{
     margin-top:0.5rem;
 }
 .title{
+    margin-top:  6rem;
     padding: 2rem;
-    color:rgb(13, 3, 31);
+    color:rgb(37, 22, 66);
     text-align: center;
+    background-color: midnightblue
+ 
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 4rem;
   
+} 
+
+article .computers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    text-align: center;
+    background-color:ivory;   
+    border-radius: 5rem;
+    line-height: 3rem;
+    margin-top: 4rem;
+    
+   
+    
+}
+article .computers b{
+    background-color:ivory;   
+    line-height: 10rem;
     
 }
 
-article p{
 
-   text-align: center;
-   padding: 2rem;
+article h1{
+    background-color: rgb(154, 133, 216);
+}
+@media (width > 600) {
+    article{
+   
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+footer p{
+    color:midnightblue;
+    background-color: ivory;
+    height: 10rem;
+    line-height: 5rem;
+    text-align: center;
+    margin-top: 20rem;
+
+    
    
 }
-.compRow .comp{
-   
-   position: inherit;
-   padding: 1rem;
-  
-    
+button{
+    margin-top: 4rem;
+    width:6rem;
+    height: 2rem;
+    border: none;
+    background-color: rgb(45, 35, 35);
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+    font-size: large;
+    border-radius: 0.2rem;
 }
