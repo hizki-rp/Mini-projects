@@ -5,8 +5,8 @@
 
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 
     box-sizing: border-box;
     background-color: var(--light);
@@ -15,19 +15,16 @@
    
 }
 
-
+header{
+    padding-top: 0;
+}
 
 li{
    display: inline;
-   padding:3rem;
    background-color: var(--light);
 
 }
 
-.wrapper{
- margin-left: 10%;
- margin-right: 10%;
-}
 a{
     text-decoration: none;
     color: rgb(178, 178, 249);
@@ -74,45 +71,48 @@ article .computers{
     margin-top: 4rem;
     
     
+    
    
     
 }
-article .computers b {
-    background-color:ivory;   
-    line-height: 10rem;
-    
+.nav-list{
+    display: flex;
+    justify-content: center;;
 }
-
-
-article h1{
-    background-color: rgb(154, 133, 216);
+h1{
+   align-self: center;
 }
-@media (width > 600) {
-    article{
-   
-        grid-template-columns: 1fr 1fr;
-    }
-}
+img{
+  width: 50%;
 
-footer p{
-    color:midnightblue;
-    background-color: ivory;
-    height: 10rem;
-    line-height: 5rem;
-    text-align: center;
-    margin-top: 20rem;
-
-    
    
 }
+
+.computers{
+    display: flex;
+    
+    
+}
+h1{
+    display: flex;
+    align-self: flex-start;
+}
+@media only screen and (max-width: 600px) {
+  .computers{
+    flex-direction: column;
+
+  }
+  img{
+    width: 90%;
+    align-self: center;
+  }
+  }
 button{
-    margin-top: 4rem;
-    width:6rem;
-    height: 2rem;
-    border: none;
-    background-color: rgb(37, 22, 66);
-    color:rgb(255, 255, 255);
-    cursor:pointer;
-    font-size: large;
-    border-radius: 0.2rem;
+  width: 20%;
+  height: 40%;
 }
+footer{
+    background-color: black;
+    color:aliceblue;
+}
+
